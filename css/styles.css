@@ -398,6 +398,8 @@ body {
   padding: 6px 22px;
 }
 
+/* галерея карток */
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
