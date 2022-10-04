@@ -249,6 +249,14 @@ body {
   margin-bottom: 50px;
 }
 
+.services-list {
+  display: flex;
+}
+
+.services-list .services-item + .services-item {
+  margin-left: 30px;
+}
+
 .services-image {
   display: block;
 }
