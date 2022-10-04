@@ -99,6 +99,11 @@ body {
   min-width: 73px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* хедер */
 
 .header {
@@ -174,7 +179,7 @@ body {
 
 /* герой */
 
-.hero {
+.hero.section {
   background-color: var(--hero-background-color);
   text-align: center;
   padding-top: 200px;
@@ -218,11 +223,6 @@ body {
 
 /* Секція наші переваги */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .features-list {
   display: flex;
 }
@@ -252,7 +252,8 @@ body {
 
 /* Секція чим ми займаємось */
 
-.services {
+.services.section {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
@@ -277,8 +278,6 @@ body {
 
 .team {
   background-color: var(--secondary-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -371,11 +370,6 @@ body {
 /* сторінка портфоліо */
 
 /* Основний контент сторінки портфоліо */
-
-.gallery {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .button-list {
   display: flex;
