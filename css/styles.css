@@ -324,10 +324,15 @@ body {
 
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
+  display: inline-block;
   color: var(--page-white-color);
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .adress .link {
@@ -352,6 +357,10 @@ body {
 .adress .link:hover,
 .adress .link:focus {
   color: var(--accent-color);
+}
+
+.adress-list .adress-item + .adress-item {
+  margin-top: 9px;
 }
 
 /* сторінка портфоліо */
