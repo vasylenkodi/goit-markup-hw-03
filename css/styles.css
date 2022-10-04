@@ -18,7 +18,7 @@
   --adress-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
-/* УТИЛИТЫ */
+/* УТІЛІТИ */
 /* ---------------------------- */
 
 body {
@@ -42,6 +42,23 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.image {
+  display: block;
+}
+
 /* ---------------------------- */
 
 .logo {
@@ -55,6 +72,8 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -117,18 +136,21 @@ body {
 
 .hero {
   background-color: var(--hero-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--page-white-color);
 
-
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero .button {
@@ -146,23 +168,54 @@ body {
 
 /* Секція наші переваги */
 
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-subtitle {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features-text {
   line-height: 1.71;
+  margin: 0;
 }
 
 /* Секція чим ми займаємось */
+
+.services {
+  padding-bottom: 94px;
+}
+
+.services-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.services-image {
+  display: block;
+}
 
 /* Секція наша команда */
 
 .team {
   background-color: var(--secondary-background-color);
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team .image {
+  margin-bottom: 30px;
 }
 
 .team-subtitle {
@@ -171,12 +224,16 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team .position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin: 0;
 }
 
 /* футер */
@@ -217,6 +274,11 @@ body {
 
 /* Основний контент сторінки портфоліо */
 
+.gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .gallery .button {
   font-weight: 500;
   line-height: 1.62;
@@ -226,6 +288,10 @@ body {
   background-color: var(--secondary-background-color);
 
   padding: 6px 22px;
+}
+
+.gallery .image {
+  margin-bottom: 20px;
 }
 
 .gallery .button:hover,
@@ -239,9 +305,13 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .gallery-text {
   font-size: 16px;
   line-height: 1.88;
+  margin: 0;
 }
