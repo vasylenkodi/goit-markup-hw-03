@@ -11,6 +11,7 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
   --logo-primary-color: #000000;
   --page-white-color: #ffffff;
   --hero-background-color: #2f303a;
@@ -200,8 +201,14 @@ body {
   color: var(--page-white-color);
 
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--button-hover-color);
 }
 
 /* Секція наші переваги */
@@ -265,6 +272,8 @@ body {
 
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -272,8 +281,25 @@ body {
   margin-bottom: 50px;
 }
 
-.team .image {
-  margin-bottom: 30px;
+.team-list {
+  display: flex;
+}
+.team-list .team-card + .team-card {
+  margin-left: 30px;
+}
+
+.team-card {
+  width: calc((100% - (30 * 3)) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--page-white-color);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-subtitle {
