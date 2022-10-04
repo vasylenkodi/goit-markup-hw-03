@@ -16,6 +16,7 @@
   --hero-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --adress-contacts-color: rgba(255, 255, 255, 0.6);
+  --header-border-color: #ececec;
 }
 
 /* УТІЛІТИ */
@@ -44,15 +45,15 @@ body {
 
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .image {
@@ -60,15 +61,6 @@ body {
 }
 
 /* ---------------------------- */
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--logo-primary-color);
-}
 
 .list {
   list-style: none;
@@ -107,16 +99,60 @@ body {
 
 /* хедер */
 
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--logo-primary-color);
+  margin-right: 93px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list .navigation-link + .navigation-link {
+  margin-left: 50px;
+}
+
 .navigation-list .link {
+  display: inline-block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-list .link:hover,
 .navigation-list .link:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.contacts-list .contacts-item + .contacts-item {
+  margin-left: 50px;
 }
 
 .contacts-list .link {
@@ -125,6 +161,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-list .link:hover,
